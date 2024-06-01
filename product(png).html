@@ -77,75 +77,30 @@
     .active {
       background-color: red;
     }
-
-  /*head*/
+  /*内容*/
     .box_1{
-      width: 90%;
-      padding: 10px 150px 0px 150px;
-    }
-
-  /*公司介绍*/
-    .box_2{
-      width: 95%;
-      height: 600px;
- 
-      transform: translate(2%, 13%);
-      padding: 10px 25px 15px 20px;
-    }
-
-    .box_2 img{
-      width: 850px;
-      height: 500px;
-      float: left;
-    }
-
-    .box_2 p{
-      font-size: 40px;
-      color: black;
-      transform: translate(2%, 13%);
-    }
-
-    /*公司文化*/
-    .box_3{
-      width: 90%;
-      height: 750px;
-      transform: translate(2%, 13%);
-      padding: 5px 25px 15px 40px;
-    }
-
-    .img-button {
-      box-sizing: border-box;
-    }
-    
-    .img-button {
-      float: left;
-      width: 33.33%;
-      padding: 10px;
-    }
-    
-    .img-button:hover {
-      background-color:#666666;
-    }
-
-    .img-button img {
-      transform: translate(60%, 13%);
+        width: 90%;
+        height: 1350px;
+        transform: translate(10%, 8%);
+        padding: 0px 30PX 0px 30PX;
     }
 
     .thumbnail {
       border: 1px solid #ddd; /* 灰色边框 */
       border-radius: 4px; /* 圆角边框 */
       padding: 5px; /* 一些填充 */
-      width:170px; /* 设置小宽度 */
-      transform: translate(350px, 450px);
+      width:400px; /* 设置小宽度 */
+       /* 确保小图像在顶部 */
     }  /* 设置小图像的样式 */
 
     .large {
-      width:1000px; /* 设置大宽度 */
+      border: 1px solid #ddd; /* 灰色边框 */
+      border-radius: 4px; /* 圆角边框 */
+      padding: 5px; /* 一些填充 */
+      width:200px; /* 设置大宽度 */
       display: none; /* 默认隐藏 */
       position: absolute; /* 绝对定位 */
-      top: 30%; /* 垂直居中 */
-      left: 15%; /* 水平居中 */
-      transform: translate(0%, -30%); /* 调整偏移量 */
+      z-index:999
     }/* 设置大图像的样式 */
   
     .thumbnail:hover {
@@ -156,14 +111,46 @@
       display: block;
     }/* 悬停时显示大图像 */
 
-    .one {
-        width:1000px;; /* 设置大宽度 */
-        position: absolute; /* 绝对定位 */
-        top: 30%; /* 垂直居中 */
-        left: 15%; /* 水平居中 */
-        transform: translate(0%, -30%); /* 调整偏移量 */
-    }/*默认大图显示*/
+    .one_2{
+      top: 13.8%; /* 垂直居中 */
+      left:28%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
 
+    .tow_2{
+      top: 13.8%; /* 垂直居中 */
+      left: 55%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
+
+    .three_2{
+      top: 13.8%; /* 垂直居中 */
+      left: 82.5%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
+
+    .four_2{
+      top: 44.7%; /* 垂直居中 */
+      left:28%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
+
+    .five_2{
+      top: 44.7%; /* 垂直居中 */
+      left: 55%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
+
+    .six_2{
+      top: 44.7%; /* 垂直居中 */
+      left: 82.5%; /* 水平居中 */
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
+    .seven_2{
+      top: 75.6%; /* 垂直居中 */
+      left:28%;
+      transform: translate(5%, -30%); /* 调整偏移量 */
+    }
   /*末尾导航栏*/
 
     .box-4{
@@ -171,7 +158,7 @@
       color: white;
       width: 100%;
       height:300px;
-      transform: translate(-2%, 140%);
+      transform: translate(-2%, 70%);
       padding: 15px 80px 40px 80px;
     }
 
@@ -192,18 +179,17 @@
     .hhh{
       transform: translate(0%, -170%);
     }
-
   </style>
 </head>
 <body>
   <ul>
-    <img src="./static/home/logo.jpg" alt="Logo" class="logo"width=" 90" height="50">
+    <img src="./static/home/logo.png" alt="Logo" class="logo"width=" 90" height="50">
       <li><p style="color:white">0571-82422678</p ></li>
-      <li><img src="./static/home/phone number.jpg " alt="Phone Number" width=" 50 " height="61"></li>
+      <li><img src="./static/home/phone number.png " alt="Phone Number" width=" 50 " height="61"></li>
       <li><a href="./worker.html">人才招募</a></li>
-      <li><a href="./about.html" class="active">关于我们</a></li>
+      <li><a href="./about.html">关于我们</a></li>
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">产品中心</a>
+        <a href="javascript:void(0)" class="dropbtn"   style="background-color:red;">产品中心</a>
         <div class="dropdown-content">
           <a href="./technology.html">技术实力</a>
           <a href="./product.html">样品展示</a>
@@ -212,34 +198,44 @@
   </ul><!--导航栏-->
 
   <div class="box_1">
-    <img src="./static/about\头.jpg"alt="head" width="95%">
-  </div>
-
-  <div class="box_2">
-    <h1>公司介绍</h1>
-    <img src="./static/about\3.jpg" alt="head">
-    <p> 弗郎徳五金有限公司创立于2006年，注册资金超过350万，本公司致力于多种五金零件定制、生产、加工，应用领域包括：五金机械配件，冲压件，汽车配件，家具生活用品配件等，经过近二十年的发展，在国内多地有合作公司，同时出口欧美等国家。</p>
-  </div>
-
-  <div class="box_3">
-    <h1>公司文化</h1>
+    <h1>样品展示</h1>
     <div class="clearfix">
-      <img src="./static/about\服务-2.jpg" alt="Image 1" class="one">
       <!-- 第一张缩略图和对应的大图像 -->
       <a href="#">
-      <img src="./static/about\服务.jpg" alt="Image 1" class="thumbnail">
-      <img src="./static/about\服务-2.jpg" alt="Image 1" class="large">
+        <img src="./static/product\1-1.png" alt="Image 1" class="thumbnail one_1">
+        <img src="./static/product\1-2.png" alt="Image 1" class="large one_2">
       </a>
       <!-- 第二张缩略图和对应的大图像 -->
       <a href="#">
-      <img src="./static/about\荣誉.jpg" alt="Image 2" class="thumbnail">
-      <img src="./static/about\荣誉-2.jpg" alt="Image 2" class="large">
+        <img src="./static/product\2-1.png" alt="Image 1" class="thumbnail tow_1">
+        <img src="./static/product\2-2.png" alt="Image 1" class="large tow_2">
       </a>
       <!-- 第三张缩略图和对应的大图像 -->
       <a href="#">
-      <img src="./static/about\愿景.jpg" alt="Image 3" class="thumbnail">
-      <img src="./static/about\愿景-2.jpg"  alt="Image 3" class="large">
+        <img src="./static/product\3-1.png" alt="Image 1" class="thumbnail three_1">
+        <img src="./static/product\3-2.png" alt="Image 1" class="large three_2">
       </a>
+      <!-- 第四张缩略图和对应的大图像 -->
+      <a href="#">
+        <img src="./static/product\4-1.png" alt="Image 1" class="thumbnail four_1">
+        <img src="./static/product\4-2.png" alt="Image 1" class="large four_2">
+      </a>
+      <!-- 第五张缩略图和对应的大图像 -->
+      <a href="#">
+        <img src="./static/product\5-1.png" alt="Image 1" class="thumbnail five_1">
+        <img src="./static/product\5-2.png" alt="Image 1" class="large five_2">
+      </a>
+      <!-- 第六张缩略图和对应的大图像 -->
+      <a href="#">
+        <img src="./static/product\6-1.png" alt="Image 1" class="thumbnail six_1">
+        <img src="./static/product\6-2.png" alt="Image 1" class="large six_2">
+      </a>
+      <!-- 第七张缩略图和对应的大图像 -->
+      <a href="#">
+        <img src="./static/product\7-1.png" alt="Image 1" class="thumbnail seven_1">
+        <img src="./static/product\7-2.png" alt="Image 1" class="large seven_2">
+      </a>
+    </div>
   </div>
 
   <div class="box-4">
