@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>杭州弗郎德有限公司</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      overflow-x: hidden; /* 隐藏水平滚动栏 */
+      overflow-y: scroll; /* 添加垂直滚动栏 */
+    }
+  /*导航栏样式*/
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .logo{
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 6px 16px;
+      text-decoration: none;
+    }
+
+    li {
+      float: right;
+      margin-right: 15px;
+    }
+
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 20px 35px;
+      text-decoration: none;
+      height:25px
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .active {
+      background-color: red;
+    }
+
+  /*head*/
+    .box_1{
+      width: 90%;
+      padding: 10px 150px 0px 150px;
+    }
+
+  /*公司介绍*/
+    .box_2{
+      width: 95%;
+      height: 600px;
+ 
+      transform: translate(2%, 13%);
+      padding: 10px 25px 15px 20px;
+    }
+
+    .box_2 img{
+      width: 850px;
+      height: 500px;
+      float: left;
+    }
+
+    .box_2 p{
+      font-size: 40px;
+      color: black;
+      transform: translate(2%, 13%);
+    }
+
+    /*公司文化*/
+    .box_3{
+      width: 90%;
+      height: 750px;
+      transform: translate(2%, 13%);
+      padding: 5px 25px 15px 40px;
+    }
+
+    .img-button {
+      box-sizing: border-box;
+    }
+    
+    .img-button {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
+    
+    .img-button:hover {
+      background-color:#666666;
+    }
+
+    .img-button img {
+      transform: translate(60%, 13%);
+    }
+
+    .thumbnail {
+      border: 1px solid #ddd; /* 灰色边框 */
+      border-radius: 4px; /* 圆角边框 */
+      padding: 5px; /* 一些填充 */
+      width:170px; /* 设置小宽度 */
+      transform: translate(350px, 450px);
+    }  /* 设置小图像的样式 */
+
+    .large {
+      width:1000px; /* 设置大宽度 */
+      display: none; /* 默认隐藏 */
+      position: absolute; /* 绝对定位 */
+      top: 30%; /* 垂直居中 */
+      left: 15%; /* 水平居中 */
+      transform: translate(0%, -30%); /* 调整偏移量 */
+    }/* 设置大图像的样式 */
+  
+    .thumbnail:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }/* 小图像添加悬停效果（蓝色阴影）*/
+  
+    .thumbnail:hover + .large {
+      display: block;
+    }/* 悬停时显示大图像 */
+
+    .one {
+        width:1000px;; /* 设置大宽度 */
+        position: absolute; /* 绝对定位 */
+        top: 30%; /* 垂直居中 */
+        left: 15%; /* 水平居中 */
+        transform: translate(0%, -30%); /* 调整偏移量 */
+    }/*默认大图显示*/
+
+  /*末尾导航栏*/
+
+    .box-4{
+      background-color: #4c4747;
+      color: white;
+      width: 100%;
+      height:300px;
+      transform: translate(-2%, 140%);
+      padding: 15px 80px 40px 80px;
+    }
+
+    .end{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .aaa{
+      width: 30%;
+      height: 250px;
+
+      transform: translate(5%, -5%);
+      float: left;
+    }
+
+    .hhh{
+      transform: translate(0%, -170%);
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <img src="./static/home/logo.png" alt="Logo" class="logo"width=" 90" height="50">
+      <li><p style="color:white">0571-82422678</p ></li>
+      <li><img src="./static/home/phone number.png " alt="Phone Number" width=" 50 " height="61"></li>
+      <li><a href="./worker.html">人才招募</a></li>
+      <li><a href="./about.html" class="active">关于我们</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">产品中心</a>
+        <div class="dropdown-content">
+          <a href="./technology.html">技术实力</a>
+          <a href="./product.html">样品展示</a>
+        </div>
+      <li><a href="./index.html" >首页</a></li>
+  </ul><!--导航栏-->
+
+  <div class="box_1">
+    <img src="./static/about\头.png"alt="head" width="95%">
+  </div>
+
+  <div class="box_2">
+    <h1>公司介绍</h1>
+    <img src="./static/about\3.png" alt="head">
+    <p> 弗郎徳五金有限公司创立于2006年，注册资金超过350万，本公司致力于多种五金零件定制、生产、加工，应用领域包括：五金机械配件，冲压件，汽车配件，家具生活用品配件等，经过近二十年的发展，在国内多地有合作公司，同时出口欧美等国家。</p>
+  </div>
+
+  <div class="box_3">
+    <h1>公司文化</h1>
+    <div class="clearfix">
+      <img src="./static/about\服务-2.png" alt="Image 1" class="one">
+      <!-- 第一张缩略图和对应的大图像 -->
+      <a href="#">
+      <img src="./static/about\服务.png" alt="Image 1" class="thumbnail">
+      <img src="./static/about\服务-2.png" alt="Image 1" class="large">
+      </a>
+      <!-- 第二张缩略图和对应的大图像 -->
+      <a href="#">
+      <img src="./static/about\荣誉.png" alt="Image 2" class="thumbnail">
+      <img src="./static/about\荣誉-2.png" alt="Image 2" class="large">
+      </a>
+      <!-- 第三张缩略图和对应的大图像 -->
+      <a href="#">
+      <img src="./static/about\愿景.png" alt="Image 3" class="thumbnail">
+      <img src="./static/about\愿景-2.png"  alt="Image 3" class="large">
+      </a>
+  </div>
+
+  <div class="box-4">
+    <h1>弗郎徳五金有限公司</h1>
+    <div class="aaa">
+      <p><a href="./index.html" class="end">首页</a></p>
+      <p><a href="./technology.html"class="end">技术实力</a></p>
+      <p><a href="./product.html"class="end">样品展示</a></p>
+      <p><a href="./about.html"class="end">关于我们</a></p>
+      <p><a href="./worker.html"class="end">人才招募</a>
+    </div>
+    <h2 class="hhh">联系我们:0571-82422678</h2>     
+  </div><!--末尾导航栏*-->
+</body>
+</html>
